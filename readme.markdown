@@ -1,0 +1,1 @@
+http://blog.ginader.de/archives/2009/02/01/CSS-Voodoo-The-dark-art-of-CSS-Hacks.php Read more about the CSS Hacks used in this Demo here

@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>CSS Hacks Collection</title>
+
+    <style type="text/css">
+        body p { display: none; }
+        
+        #more{
+          display:block;
+          padding-top:2em;
+        }
+
+        
+        /*FireFox 2 and 3 */
+        #firefox2, x:-moz-any-link {
+          display: block;
+          *display: none; /* overwrite for ie6 and ie7*/
+        } 
+
+        /*FireFox 3*/
+        #firefox3, x:-moz-any-link, x:default {
+          display: block;
+          *display: none; /* overwrite for ie6 and ie7*/
+        }
+
+        /* IE 7 */ 
+        html > body #ie7 { 
+            *display: block; 
+        }
+        
+        /*IE 6 and IE 7 */
+        #ie6andie7 { 
+             *display: block; 
+        }
+        
+        /* IE 6 */ 
+        body #ie6 { 
+             _display: block; 
+        }   
+        
+        /* IE 6, IE 7 and IE 8 */ 
+        body #ie6andie7andie8{
+            display:block\9;
+        }    
+        
+        /* IE 8 */ 
+        body #ie8{
+            display:block\9;
+            *display: none; /* overwrite for ie6 and ie7*/
+        }    
+        
+        /* Safari */ 
+        @media screen and (-webkit-min-device-pixel-ratio:0) { 
+            #safari { 
+                display: block; 
+            } 
+        } 
+        
+        /* Opera */ 
+        @media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0) { 
+            head~body #opera { 
+                display: block; 
+            } 
+        } 
+     </style> 
+
+</head>
+<body>
+    <p id="opera">Opera 7.2 - 9.62 (so far)</p>
+    <p id="safari">Safari</p>
+    <p id="firefox2">Firefox 2 and 3</p>
+    <p id="firefox3">Firefox 3</p>
+    <p id="ie7">IE 7</p>
+    <p id="ie6">IE 6</p>
+    <p id="ie6andie7">IE 6 and IE7</p>
+    <p id="ie6andie7andie8">IE6, IE 7 and IE8</p>
+    <p id="ie8">IE8</p>  
+</body>
+</html>
