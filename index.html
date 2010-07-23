@@ -3,30 +3,43 @@
 
 <html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>CSS Hacks Collection</title>
-
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>CSS Hacks Collection</title>
+    <!--
+     * code: http://github.com/ginader/Accessible-Tabs
+     * please report issues at: http://github.com/ginader/Accessible-Tabs/issues
+     *
+     * Copyright (c) 2007 Dirk Ginader (ginader.de)
+     * Dual licensed under the MIT and GPL licenses:
+     * http://www.opensource.org/licenses/mit-license.php
+     * http://www.gnu.org/licenses/gpl.html
+     *
+     * Version: 1.7
+     * 
+     * History:
+     * * 1.0 initial release
+    -->
+    
     <style type="text/css">
         body p { display: none; }
-        
-        #more{
-          display:block;
-          padding-top:2em;
-        }
-
         
         /*FireFox 2 and 3 */
         #firefox2, x:-moz-any-link {
           display: block;
           *display: none; /* overwrite for ie6 and ie7*/
         } 
-
+        
         /*FireFox 3*/
         #firefox3, x:-moz-any-link, x:default {
           display: block;
           *display: none; /* overwrite for ie6 and ie7*/
         }
-
+        
+        /* Firefox 3.5+ */
+        BODY:nth-of-type(1) #firefox3_5, x:-moz-any-link, x:default {
+            display: block;
+        }
+        
         /* IE 7 */ 
         html > body #ie7 { 
             *display: block; 
@@ -53,9 +66,9 @@
             *display: none; /* overwrite for ie6 and ie7*/
         }    
         
-        /* Safari */ 
+        /* Webkit (Safari and Chrome) */ 
         @media screen and (-webkit-min-device-pixel-ratio:0) { 
-            #safari { 
+            #webkit { 
                 display: block; 
             } 
         } 
@@ -70,14 +83,18 @@
 
 </head>
 <body>
-    <p id="opera">Opera 7.2 - 9.62 (so far)</p>
-    <p id="safari">Safari</p>
+    <p id="opera">Opera 7.2+</p>
+    <p id="webkit">Webkit (Safari and Chrome)</p>
     <p id="firefox2">Firefox 2 and 3</p>
-    <p id="firefox3">Firefox 3</p>
+    <p id="firefox3">Firefox 3+</p>
+    <p id="firefox3_5">Firefox 3.5+</p>
     <p id="ie7">IE 7</p>
     <p id="ie6">IE 6</p>
     <p id="ie6andie7">IE 6 and IE7</p>
     <p id="ie6andie7andie8">IE6, IE 7 and IE8</p>
-    <p id="ie8">IE8</p>  
+    <p id="ie8">IE8</p>
+    <pre>
+        check the code to see how the CSS Hacks work
+    </pre>
 </body>
 </html>
