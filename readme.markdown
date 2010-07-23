@@ -9,5 +9,6 @@ Then I use the Browser specific Hacks to make the Browser names visible again.
 
 See also
 --------
+* [See the DEMO Code in action](http://blog.ginader.de/dev/css/hacks/index.php)
 * [Read more about the CSS Hacks used in this Demo here (english)](http://blog.ginader.de/archives/2009/02/01/CSS-Voodoo-The-dark-art-of-CSS-Hacks.php)
 * [Mehr Infos über die hier verwendeten Hacks (deutsch)](http://blog.ginader.de/archives/2009/02/01/CSS-Voodoo-Die-dunkle-Kunst-der-CSS-Hacks.php)
