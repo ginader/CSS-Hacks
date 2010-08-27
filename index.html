@@ -61,8 +61,8 @@
              _display: block; 
         }   
         
-        /* IE 6, IE 7 and IE 8 */ 
-        body #ie6andie7andie8{
+        /* IE6, IE 7, IE 8 and IE 9 */ 
+        body #ie6andie7andie8andie9{
             display:block\9;
         }    
         
@@ -70,7 +70,15 @@
         body #ie8{
             display:block\9;
             *display: none; /* overwrite for ie6 and ie7*/
-        }    
+        }
+        body #ie8:nth-of-type(1n){ /* overwrite for ie9 which still also reads the \9 hack */
+            display:none;
+        }
+        
+        /* IE 9+ */
+        body #ie9:nth-of-type(1n){
+            display:block;
+        }
         
         /* Webkit (Safari and Chrome) */ 
         @media screen and (-webkit-min-device-pixel-ratio:0) { 
@@ -97,8 +105,9 @@
     <p id="ie7">IE 7</p>
     <p id="ie6">IE 6</p>
     <p id="ie6andie7">IE 6 and IE7</p>
-    <p id="ie6andie7andie8">IE6, IE 7 and IE8</p>
+    <p id="ie6andie7andie8andie9">IE6, IE 7, IE 8 and IE 9</p>
     <p id="ie8">IE8</p>
+    <p id="ie9">IE9+</p>
     <pre>
         check the code to see how the CSS Hacks work
     </pre>
