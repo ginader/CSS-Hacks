@@ -14,12 +14,13 @@
      * http://www.opensource.org/licenses/mit-license.php
      * http://www.gnu.org/licenses/gpl.html
      *
-     * Version: 1.4
+     * Version: 1.4.1
      * 
      * History:
      * * 1.0 initial release
      * * 1.3 adding support for Firefox 3.5+
      * * 1.4 adding support for Internet Explorer 9+
+     * * 1.4.1 added missing exclude for other modern Browsers who also read the CSS3 selector. IE9 Hack is now perfect.
     -->
     
     <style type="text/css">
@@ -77,8 +78,8 @@
         }
         
         /* IE 9+ */
-        body #ie9:nth-of-type(1n){
-            display:block;
+        body #ie9:nth-of-type(1n){ /* CSS3 Selector that is interpreted by many modern Browsers including IE()*/
+            display:block\9; /* Hack to specify Internet Explorers including 9 so we exclude FF, webkit, etc */ 
         }
         
         /* Webkit (Safari and Chrome) */ 
