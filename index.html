@@ -14,7 +14,7 @@
      * http://www.opensource.org/licenses/mit-license.php
      * http://www.gnu.org/licenses/gpl.html
      *
-     * Version: 1.4.1
+     * Version: 1.5
      * 
      * History:
      * * 1.0 initial release
@@ -22,6 +22,7 @@
      * * 1.4 adding support for Internet Explorer 9+
      * * 1.4.1 added missing exclude for other modern Browsers who also read the CSS3 selector. IE9 Hack is now perfect.
      * * 1.4.2 changed the \9 hack to \0 as it appears to be more reliable in IE9
+     * * 1.5 adding Support for Firefox 4 thanks to Estelle Weyl
     -->
     
     <style type="text/css">
@@ -47,6 +48,13 @@
         /* Firefox 3.5+ */
         BODY:nth-of-type(1) #firefox3_5, x:-moz-any-link, x:default {
             display: block;
+        }
+        
+        /* Firefox 4+ */ 
+        @media screen and (min--moz-device-pixel-ratio:0) { 
+            #firefox4 { 
+                display: block; 
+            } 
         }
         
         /* IE 7 */ 
@@ -105,6 +113,7 @@
     <p id="firefox2">Firefox 2 and 3</p>
     <p id="firefox3">Firefox 3+</p>
     <p id="firefox3_5">Firefox 3.5+</p>
+    <p id="firefox4">Firefox 4+</p>
     <p id="ie7">IE 7</p>
     <p id="ie6">IE 6</p>
     <p id="ie6andie7">IE 6 and IE7</p>
