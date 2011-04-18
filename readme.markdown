@@ -7,8 +7,8 @@ CSS Hacks are something one doesn't talk about in the public. Developers are ash
 In my Demo I have Paragraphs containing the names of the targeted Browsers and hide them by default.
 Then I use the Browser specific Hacks to make the Browser names visible again.
 
-Version 1.5
------------
+Version 1.5.1
+-------------
 * Firefox
  * 2
  * 3

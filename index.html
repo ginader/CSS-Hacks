@@ -23,6 +23,7 @@
      * * 1.4.1 added missing exclude for other modern Browsers who also read the CSS3 selector. IE9 Hack is now perfect.
      * * 1.4.2 changed the \9 hack to \0 as it appears to be more reliable in IE9
      * * 1.5 adding Support for Firefox 4 thanks to Estelle Weyl
+     * * 1.5.1 changed \0 back to \9 as \0 was also triggering Opera while \9 does not
     -->
     
     <style type="text/css">
@@ -50,6 +51,18 @@
             display: block;
         }
         
+        /* Firefox 3.6+ */
+        BODY:nth-of-type(1) #firefox3_6, x:-moz-any-link, x:default {
+            display: block;
+        }
+        
+        /* Firefox 3.6+ */ 
+        @media screen and (-moz-images-in-menus) { 
+            #firefox3_6 { 
+                display: block; 
+            } 
+        }
+        
         /* Firefox 4+ */ 
         @media screen and (min--moz-device-pixel-ratio:0) { 
             #firefox4 { 
@@ -74,12 +87,12 @@
         
         /* IE6, IE 7, IE 8 and IE 9 */ 
         body #ie6andie7andie8andie9{
-            display:block\0;
+            display:block\9;
         }    
         
         /* IE 8 */ 
         body #ie8{
-            display:block\0;
+            display:block \9;
             *display: none; /* overwrite for ie6 and ie7*/
         }
         body #ie8:nth-of-type(1n){ /* overwrite for ie9 which still also reads the \9 hack */
@@ -88,7 +101,7 @@
         
         /* IE 9+ */
         body #ie9:nth-of-type(1n){ /* CSS3 Selector that is interpreted by many modern Browsers including IE()*/
-            display:block\0; /* Hack to specify Internet Explorers including 9 so we exclude FF, webkit, etc */ 
+            display:block \9; /* Hack to specify Internet Explorers including 9 so we exclude FF, webkit, etc */ 
         }
         
         /* Webkit (Safari and Chrome) */ 
@@ -113,6 +126,7 @@
     <p id="firefox2">Firefox 2 and 3</p>
     <p id="firefox3">Firefox 3+</p>
     <p id="firefox3_5">Firefox 3.5+</p>
+    <p id="firefox3_6">Firefox 3.6+</p>
     <p id="firefox4">Firefox 4+</p>
     <p id="ie7">IE 7</p>
     <p id="ie6">IE 6</p>
