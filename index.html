@@ -24,6 +24,7 @@
      * * 1.4.2 changed the \9 hack to \0 as it appears to be more reliable in IE9
      * * 1.5 adding Support for Firefox 4 thanks to Estelle Weyl
      * * 1.5.1 changed \0 back to \9 as \0 was also triggering Opera while \9 does not
+     * * 1.5.2 added an Opera-hack
     -->
     
     <style type="text/css">
@@ -111,17 +112,23 @@
             } 
         } 
         
-        /* Opera */ 
+        /* Opera - doesn't work in Opera 12 */ 
         @media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0) { 
             head~body #opera { 
                 display: block; 
             } 
         } 
+        
+        /* Opera again - works in Opera 12 */
+        x:-o-prefocus, #opera2 {
+            display: block;
+            }
      </style> 
 
 </head>
 <body>
     <p id="opera">Opera 7.2+</p>
+    <p id="opera2">Opera (smaller rule)</p>
     <p id="webkit">Webkit (Safari and Chrome)</p>
     <p id="firefox2">Firefox 2 and 3</p>
     <p id="firefox3">Firefox 3+</p>
