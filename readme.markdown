@@ -19,6 +19,7 @@ Version 1.5.1
  * 7
  * 8
  * 9
+ * 10
 * Webkit (Safari and Chrome)
 * Opera
 
