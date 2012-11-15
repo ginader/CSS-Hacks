@@ -134,8 +134,8 @@ var BrowserDetect = {
 };
 BrowserDetect.init();
 
-console.log(BrowserDetect.browser.toLowerCase());
-console.log(BrowserDetect.version);
+//console.log(BrowserDetect.browser.toLowerCase());
+//console.log(BrowserDetect.version);
 
 if(	BrowserDetect.browser.toLowerCase() == 'chrome' || BrowserDetect.browser.toLowerCase() == 'safari'){
 	test( "webkit", function() {
