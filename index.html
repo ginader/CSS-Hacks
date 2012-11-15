@@ -14,7 +14,7 @@
      * http://www.opensource.org/licenses/mit-license.php
      * http://www.gnu.org/licenses/gpl.html
      *
-     * Version: 1.5
+     * Version: 1.6
      * 
      * History:
      * * 1.0 initial release
@@ -25,7 +25,11 @@
      * * 1.5 adding Support for Firefox 4 thanks to Estelle Weyl
      * * 1.5.1 changed \0 back to \9 as \0 was also triggering Opera while \9 does not
      * * 1.5.2 added an Opera-hack
+     * * 1.6 added Hack for IE 10 (not working yet)
+     * * * also added QUnit for automated testi gof the results
     -->
+
+    <link rel="stylesheet" type="text/css" href="tests/qunit-1.10.0.css">
     
     <style type="text/css">
         #more{
@@ -142,8 +146,8 @@
     <p id="firefox3_5">Firefox 3.5+</p>
     <p id="firefox3_6">Firefox 3.6+</p>
     <p id="firefox4">Firefox 4+</p>
-    <p id="ie7">IE 7</p>
     <p id="ie6">IE 6</p>
+    <p id="ie7">IE 7</p>
     <p id="ie6andie7">IE 6 and IE7</p>
     <p id="ie6andie7andie8andie9">IE6, IE 7, IE 8 and IE 9</p>
     <p id="ie8">IE8</p>
@@ -152,5 +156,12 @@
     <pre>
         check the code to see how the CSS Hacks work or <a href="http://blog.ginader.de/archives/2009/02/01/CSS-Voodoo-The-dark-art-of-CSS-Hacks.php">Read more about the CSS Hacks used in this Demo here</a>
     </pre>
+
+<!-- the following code is not needed for the hack. 
+  This is for Unit testing only -->
+
+    <div id="qunit"></div>
+    <script src="tests/qunit-1.10.0.js"></script>
+    <script src="tests/tests.js"></script>
 </body>
 </html>
