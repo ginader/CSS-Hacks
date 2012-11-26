@@ -32,10 +32,11 @@ if( $.browser.opera ){
 		ok( !isVisible("ie6") );
 		ok( !isVisible("ie7") );
 		ok( !isVisible("ie6andie7") );
-		ok( !isVisible("ie6andie7andie8andie9") );
+		ok( !isVisible("ie6andie7andie8andie9andie10") );
 		ok( !isVisible("ie8") );
 		ok( !isVisible("ie9") );
 		ok( !isVisible("ie10") );
+		ok( !isVisible("ie9andie10") );
 	});
 }
 if( $.browser.webkit ){
@@ -51,13 +52,14 @@ if( $.browser.webkit ){
 		ok( !isVisible("ie6") );
 		ok( !isVisible("ie7") );
 		ok( !isVisible("ie6andie7") );
-		ok( !isVisible("ie6andie7andie8andie9") );
+		ok( !isVisible("ie6andie7andie8andie9andie10") );
 		ok( !isVisible("ie8") );
 		ok( !isVisible("ie9") );
 		ok( !isVisible("ie10") );
+		ok( !isVisible("ie9andie10") );
 	});
 }
-// Browserstack doen't have that version
+// Browserstack doesn't have that version
 // if ( ua.mozilla && ua.version.slice(0,3) == "1.9.2.17" ) {
 // 	test( "firefox 2", function() {
 // 		ok( !isVisible("opera") );
@@ -71,10 +73,11 @@ if( $.browser.webkit ){
 // 		ok( !isVisible("ie6") );
 // 		ok( !isVisible("ie7") );
 // 		ok( !isVisible("ie6andie7") );
-// 		ok( !isVisible("ie6andie7andie8andie9") );
+// 		ok( !isVisible("ie6andie7andie8andie9andie10") );
 // 		ok( !isVisible("ie8") );
 // 		ok( !isVisible("ie9") );
 // 		ok( !isVisible("ie10") );
+//		ok( !isVisible("ie9andie10") );
 // 	});
 // }
 if ( ua.mozilla && ua.version.slice(0,5) == "1.9.0" ) {
@@ -90,13 +93,14 @@ if ( ua.mozilla && ua.version.slice(0,5) == "1.9.0" ) {
 		ok( !isVisible("ie6") );
 		ok( !isVisible("ie7") );
 		ok( !isVisible("ie6andie7") );
-		ok( !isVisible("ie6andie7andie8andie9") );
+		ok( !isVisible("ie6andie7andie8andie9andie10") );
 		ok( !isVisible("ie8") );
 		ok( !isVisible("ie9") );
-		ok( !isVisible("ie10") );
+		ok( !isVisible("ie10") );		
+		ok( !isVisible("ie9andie10") );
 	});
 }
-// Browserstack doen't have that version
+// Browserstack doesn't have that version
 // if(	BrowserDetect.browser.toLowerCase() == 'firefox' && BrowserDetect.version == 3.5){
 // 	test( "firefox 3.5", function() {
 // 		ok( !isVisible("opera") );
@@ -110,10 +114,11 @@ if ( ua.mozilla && ua.version.slice(0,5) == "1.9.0" ) {
 // 		ok( !isVisible("ie6") );
 // 		ok( !isVisible("ie7") );
 // 		ok( !isVisible("ie6andie7") );
-// 		ok( !isVisible("ie6andie7andie8andie9") );
+// 		ok( !isVisible("ie6andie7andie8andie9andie10") );
 // 		ok( !isVisible("ie8") );
 // 		ok( !isVisible("ie9") );
 // 		ok( !isVisible("ie10") );
+//		ok( !isVisible("ie9andie10") );
 // 	});
 // }
 if ( ua.mozilla && ua.version.slice(0,5) == "1.9.2" ) {
@@ -129,10 +134,11 @@ if ( ua.mozilla && ua.version.slice(0,5) == "1.9.2" ) {
 		ok( !isVisible("ie6") );
 		ok( !isVisible("ie7") );
 		ok( !isVisible("ie6andie7") );
-		ok( !isVisible("ie6andie7andie8andie9") );
+		ok( !isVisible("ie6andie7andie8andie9andie10") );
 		ok( !isVisible("ie8") );
 		ok( !isVisible("ie9") );
 		ok( !isVisible("ie10") );
+		ok( !isVisible("ie9andie10") );
 	});
 }
 if ( ua.mozilla && ua.version.slice(0,3) == "2.0" ) {
@@ -148,10 +154,11 @@ if ( ua.mozilla && ua.version.slice(0,3) == "2.0" ) {
 		ok( !isVisible("ie6") );
 		ok( !isVisible("ie7") );
 		ok( !isVisible("ie6andie7") );
-		ok( !isVisible("ie6andie7andie8andie9") );
+		ok( !isVisible("ie6andie7andie8andie9andie10") );
 		ok( !isVisible("ie8") );
 		ok( !isVisible("ie9") );
 		ok( !isVisible("ie10") );
+		ok( !isVisible("ie9andie10") );
 	});
 }
 if ( ua.msie && ua.version == "6.0" ) {
@@ -167,10 +174,11 @@ if ( ua.msie && ua.version == "6.0" ) {
 		ok( isVisible("ie6") );
 		ok( !isVisible("ie7") );
 		ok( isVisible("ie6andie7") );
-		ok( isVisible("ie6andie7andie8andie9") );
+		ok( isVisible("ie6andie7andie8andie9andie10") );
 		ok( !isVisible("ie8") );
 		ok( !isVisible("ie9") );
 		ok( !isVisible("ie10") );
+		ok( !isVisible("ie9andie10") );
 	});
 }
 if ( ua.msie && ua.version == "7.0" ) {
@@ -186,10 +194,11 @@ if ( ua.msie && ua.version == "7.0" ) {
 		ok( !isVisible("ie6") );
 		ok( isVisible("ie7") );
 		ok( isVisible("ie6andie7") );
-		ok( isVisible("ie6andie7andie8andie9") );
+		ok( isVisible("ie6andie7andie8andie9andie10") );
 		ok( !isVisible("ie8") );
 		ok( !isVisible("ie9") );
 		ok( !isVisible("ie10") );
+		ok( !isVisible("ie9andie10") );
 	});
 }
 if ( ua.msie && ua.version == "8.0" ) {
@@ -205,10 +214,11 @@ if ( ua.msie && ua.version == "8.0" ) {
 		ok( !isVisible("ie6") );
 		ok( !isVisible("ie7") );
 		ok( !isVisible("ie6andie7") );
-		ok( isVisible("ie6andie7andie8andie9") );
+		ok( isVisible("ie6andie7andie8andie9andie10") );
 		ok( isVisible("ie8") );
 		ok( !isVisible("ie9") );
 		ok( !isVisible("ie10") );
+		ok( !isVisible("ie9andie10") );
 	});
 }
 if ( ua.msie && ua.version == "9.0" ) {
@@ -224,10 +234,11 @@ if ( ua.msie && ua.version == "9.0" ) {
 		ok( !isVisible("ie6") );
 		ok( !isVisible("ie7") );
 		ok( !isVisible("ie6andie7") );
-		ok( isVisible("ie6andie7andie8andie9") );
+		ok( isVisible("ie6andie7andie8andie9andie10") );
 		ok( !isVisible("ie8") );
 		ok( isVisible("ie9") );
 		ok( !isVisible("ie10") );
+		ok( isVisible("ie9andie10") );
 	});
 }
 if ( ua.msie && ua.version == "10.0" ) {
@@ -247,6 +258,6 @@ if ( ua.msie && ua.version == "10.0" ) {
 		ok( !isVisible("ie8") );
 		ok( isVisible("ie9") );
 		ok( isVisible("ie10") );
+		ok( isVisible("ie9andie10") );
 	});
 }
-
