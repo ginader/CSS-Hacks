@@ -243,7 +243,7 @@ if ( ua.msie && ua.version == "10.0" ) {
 		ok( !isVisible("ie6") );
 		ok( !isVisible("ie7") );
 		ok( !isVisible("ie6andie7") );
-		ok( isVisible("ie6andie7andie8andie9") );
+		ok( isVisible("ie6andie7andie8andie9andie10") );
 		ok( !isVisible("ie8") );
 		ok( isVisible("ie9") );
 		ok( isVisible("ie10") );
