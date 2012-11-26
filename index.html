@@ -109,8 +109,8 @@
             display:block \9; /* Hack to specify Internet Explorers including 9 so we exclude FF, webkit, etc */ 
         }
 
-        /* IE 10 */
-        @media screen and (-ms-transform-3d) {
+        /* IE 10+ */
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
             #ie10{
                 display:block
             }
@@ -152,7 +152,7 @@
     <p id="ie6andie7andie8andie9">IE6, IE 7, IE 8 and IE 9</p>
     <p id="ie8">IE8</p>
     <p id="ie9">IE9+</p>
-    <p id="ie10">IE10</p>
+    <p id="ie10">IE10+</p>
     <pre>
         check the code to see how the CSS Hacks work or <a href="http://blog.ginader.de/archives/2009/02/01/CSS-Voodoo-The-dark-art-of-CSS-Hacks.php">Read more about the CSS Hacks used in this Demo here</a>
     </pre>
@@ -161,6 +161,7 @@
   This is for Unit testing only -->
 
     <div id="qunit"></div>
+    <script src="tests/jquery-1.8.2.min.js"></script>
     <script src="tests/qunit-1.10.0.js"></script>
     <script src="tests/tests.js"></script>
 </body>

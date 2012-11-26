@@ -1,0 +1,3 @@
+[submodule "yeti-adaptors"]
+	path = yeti-adaptors
+	url = https://github.com/ryanseddon/yeti-adaptors.git
